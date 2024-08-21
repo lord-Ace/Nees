@@ -10,19 +10,14 @@
 body{
   background: hsl(0, 0%, 96%);
 }
-input[type="radio"]{
-  display: none;
-}
 .container{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.absolute{
-  position: absolute;
-}
 #head{
+  position: relative;
   background: hsl(210, 100%, 12%);
   color: hsl(60, 33%, 97%);
   width: 100%;
@@ -42,20 +37,52 @@ input[type="radio"]{
   flex-wrap: nowrap;
   position: relative;
   max-height: 55px;
-  z-index: ;
+  z-index: 1;
 }
-header ul li:not(#regional-info){
+header ul li:not(#regional-info), #languages{
   border-right: .1em solid hsl(60, 33%, 97%);
    min-width: 18%; 
   padding: 0 .8em;
   text-wrap: nowrap;
   text-align: center;
+  margin-right: .3em;
+  }
+  #title{
+    position: absolute;
+    left: 0;
+    color: ;
+    bottom: -40%;
+    z-index: 1;
+    font-size: 3em;
   }
 #top-stories{
-  background: green;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   position: relative;
   width: 100%;
+  background: green;
   height: 25rem;
   color: hsl(60, 33%, 97%);
-  overflow: auto;
+  overflow:  auto hidden;
+  scroll-snap-type: x mandatory;
+}
+.img-box{
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  position: relative;
+  width: inherit;
+  height: 25rem;
+  animation: ;
+}
+.img-box img{
+  height: 25rem;
+  width: 100vw;
+ 
+}
+.headline{
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 5%;
+  left: 0;
 }

@@ -1,5 +1,5 @@
 <!Doctype html>
-<html>
+<htm lang="en">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,48 +19,64 @@
           <li class="sitemap"><a href="#">NEWS</a></li>
           <li class="sitemap"><a href="#">VIDEO</a></li>
           <li class="sitemap"><a href="#">SUPPORT US</a></li>
-          <li id="regional-info">
+          <li id="regional-info" class="container" style="flex-direction: column;">
             <div id="clock">12:45AM</div>
-            <details id="languages" class="container">
-              <summary>Lang: eng</summary>
-              <label><input type="radio"name="language">english</label>
-              <label><input type="radio"name="language">english</label>
-              <label><input type="radio"name="language">english</label>
-              <label><input type="radio"name="language">english</label>
-            </details>
+            <div class="container">
+              <details id="languages" class="container">
+                <summary>Lang: eng</summary>
+                <label><input type="radio"name="language">english</label>
+                <label><input type="radio"name="language">english</label>
+                <label><input type="radio"name="language">english</label>
+                <label><input type="radio"name="language">english</label>
+              </details>
+              <label for="themes">light</label>
+            </div>
           </li>
         </ul>
       </section>
-    </header>
-    <section id="top-stories" class="container">
-      <h2 id="title" class="absolute">
+      <h2 id="title">
         TOP STORIES TODAY
       </h2>
+    </header>
+    <section id="top-stories" class="container">
       <figure class="img-box">
-        <figcaption  class="headline absolute">
+        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
+        <figcaption  class="headline">
           headline1...
         </figcaption>
       </figure>
       <figure class="img-box">
+        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
         <figcaption  class="headline absolute">
           headline2...
         </figcaption>
       </figure>
       <figure class="img-box">
+        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
         <figcaption  class="headline absolute">
           headline3...
         </figcaption>
       </figure>
       <figure class="img-box">
+        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
         <figcaption  class="headline absolute">
           headline4...
         </figcaption>
       </figure>
       <figure class="img-box">
+        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
         <figcaption  class="headline absolute">
           headline5...
         </figcaption>
       </figure>
     </section>
+    <nav id="site-nav" class="container">
+      <form action="#">
+        <input type="search" name="site-search" id="search-box">
+        <button type="submit" id="submit">
+          <i class='bx bx-search-alt'></i>
+        </button>        
+      </form>
+    </nav>
   </body>
 </html>
