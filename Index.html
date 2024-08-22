@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href=""/>
     <link rel="stylesheet" href="Styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
     <title>the page</title>
   </head>
   <body>
@@ -34,49 +35,74 @@
           </li>
         </ul>
       </section>
-      <h2 id="title">
+      <h2 id="heroes-title">
         TOP STORIES TODAY
       </h2>
     </header>
     <section id="top-stories" class="container">
-      <figure class="img-box">
-        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
-        <figcaption  class="headline">
-          headline1...
-        </figcaption>
-      </figure>
-      <figure class="img-box">
-        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
-        <figcaption  class="headline absolute">
-          headline2...
-        </figcaption>
-      </figure>
-      <figure class="img-box">
-        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
-        <figcaption  class="headline absolute">
-          headline3...
-        </figcaption>
-      </figure>
-      <figure class="img-box">
-        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
-        <figcaption  class="headline absolute">
-          headline4...
-        </figcaption>
-      </figure>
-      <figure class="img-box">
-        <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
-        <figcaption  class="headline absolute">
-          headline5...
-        </figcaption>
-      </figure>
+      <a href="">
+        <figure class="img-box">
+          <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
+          <figcaption  class="headline">
+            headline1...
+          </figcaption>
+        </figure>
+        </a>
+        <a href="">
+          <figure class="img-box">
+            <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
+            <figcaption class="headline">
+              headline2...
+            </figcaption>
+          </figure>
+        </a>
+        <a href="">
+          <figure class="img-box">
+            <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
+            <figcaption class="headline">
+              headline3...
+            </figcaption>
+          </figure>
+        </a>
+        <a href="">
+          <figure class="img-box">
+            <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
+            <figcaption class="headline">
+              headline4...
+            </figcaption>
+          </figure>
+        </a><a href="">
+          <figure class="img-box">
+            <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
+            <figcaption class="headline">
+              headline5...
+            </figcaption>
+          </figure>
+        </a>
     </section>
-    <nav id="site-nav" class="container">
-      <form action="#">
+    <div id="content-preview" class="container">
+      <nav id="site-nav" class="container preview">
+        <a href="#">HOME</a>
+        <a href="#">TECH</a>
+        <a href="#">ENTERTAINMENT</a>
+        <a href="#">FINANCE</a>
+      </nav>
+      <form action="#" id="preview" class="container">
         <input type="search" name="site-search" id="search-box">
         <button type="submit" id="submit">
           <i class='bx bx-search-alt'></i>
         </button>        
       </form>
-    </nav>
+    </div>
+    <main id="content-holder">
+      <section class="content" id="featured-news"></section>
+      <section class="content" id="breaking-news"></section>
+      <section class="content" id="latest-news"></section>
+      <section class="content" id="multimedia"></section>
+      <section class="content" id="advertisement"></section>
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>

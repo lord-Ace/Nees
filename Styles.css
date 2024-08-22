@@ -10,13 +10,19 @@
 body{
   background: hsl(0, 0%, 96%);
 }
+input, button{
+  background: transparent;
+  padding: .5em;
+  border: 0;
+  outline: 0;
+}
 .container{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-#head{
+#head, #content-preview{
   position: relative;
   background: hsl(210, 100%, 12%);
   color: hsl(60, 33%, 97%);
@@ -24,6 +30,7 @@ body{
   font-size: 1em;
 }
 .header-child{
+  border: 1px solid red;
   flex: 1 1 min(500px, 100%);
   padding: 1em;
   max-height: 120px;
@@ -47,10 +54,10 @@ header ul li:not(#regional-info), #languages{
   text-align: center;
   margin-right: .3em;
   }
-  #title{
+  #heroes-title{
     position: absolute;
     left: 0;
-    color: ;
+    color: hsl(60, 33%, 90%);
     bottom: -40%;
     z-index: 1;
     font-size: 3em;
@@ -68,7 +75,7 @@ header ul li:not(#regional-info), #languages{
   scroll-snap-type: x mandatory;
 }
 .img-box{
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   scroll-behavior: smooth;
   position: relative;
   width: inherit;
@@ -85,4 +92,13 @@ header ul li:not(#regional-info), #languages{
   font-size: 1.5em;
   bottom: 5%;
   left: 0;
+}
+.preview{
+  border: 3px solid red;
+}
+form#preview{
+  border-radius: 100em;
+  border: .3em solid hsl(60, 33%, 97%);
+  flex: 1 0 20px;
+  
 }
