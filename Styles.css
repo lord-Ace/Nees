@@ -11,10 +11,14 @@ body{
   background: hsl(0, 0%, 96%);
 }
 input, button{
-  background: transparent;
+  background: yellow;
+  color: black;
+  font-size: large;
+  /* flex: 0 1 auto; */
   padding: .5em;
   border: 0;
   outline: 0;
+  border-radius: inherit;
 }
 .container{
   display: flex;
@@ -30,7 +34,6 @@ input, button{
   font-size: 1em;
 }
 .header-child{
-  border: 1px solid red;
   flex: 1 1 min(500px, 100%);
   padding: 1em;
   max-height: 120px;
@@ -93,12 +96,19 @@ header ul li:not(#regional-info), #languages{
   bottom: 5%;
   left: 0;
 }
+#content-preview{
+  flex-wrap: nowrap;
+}
 .preview{
   border: 3px solid red;
 }
-form#preview{
-  border-radius: 100em;
-  border: .3em solid hsl(60, 33%, 97%);
-  flex: 1 0 20px;
-  
+#site-nav.preview{
+  flex: 0 1 50%;
+  min-width: 20%;
+}
+#search.preview{
+  /* width: max-content; */
+  max-width: 50%;
+  flex: 0 0 auto;
+  max-width: max-content;
 }
