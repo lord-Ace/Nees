@@ -24,7 +24,7 @@
             <div id="clock">12:45AM</div>
             <div class="container">
               <details id="languages" class="container">
-                <summary>Lang: eng</summary>
+                <summary>Lang: en</summary>
                 <label><input type="radio"name="language">english</label>
                 <label><input type="radio"name="language">english</label>
                 <label><input type="radio"name="language">english</label>
@@ -82,10 +82,10 @@
     </section>
     <div id="content-preview" class="container">
       <nav id="site-nav" class="container preview">
-        <a href="#">HOME</a>
-        <a href="#">TECH</a>
-        <a href="#">ENTERTAINMENT</a>
-        <a href="#">FINANCE</a>
+        <label><input type="radio" name="site-nav" value="home">HOME</label>
+        <label><input type="radio" name="site-nav" value="TECH">TECH</label>
+        <label><input type="radio" name="site-nav" value="ENTERTAINMENT">ENTERTAINMENT</label>
+        <label><input type="radio" name="site-nav" value="FINANCE">FINANCE</label>
       </nav>
       <form action="#" id="search" class="container preview">
         <input type="search" name="site-search" id="search-box">
@@ -95,11 +95,16 @@
       </form>
     </div>
     <main id="content-holder">
-      <section class="content" id="featured-news">1234567890</section>
+      <section id="home">
+       <section class="content" id="featured-news">1234567890</section>
       <section class="content" id="breaking-news">1234567890</section>
       <section class="content" id="latest-news">1234567890</section>
       <section class="content" id="multimedia">1234567890</section>
       <section class="content" id="advertisement">1234567890</section>
+      </section>
+      <section id="TECH"></section>
+      <section id="ENTERTAINMENT"></section>
+      <section id="FINANCE"></section>
     </main>
     <footer>
       <h2>
