@@ -6,32 +6,29 @@
     <link rel="icon" type="image/x-icon" href=""/>
     <link rel="stylesheet" href="Styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="script.js"></script>
     <title>the page</title>
   </head>
   <body>
     <header id="head" class="container">
       <section class="first header-child container">
-       <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-AzSg3LEwc4aStPHYOYaDxKi-K9XaQ2bi4cvmhCTlJYgCNIFv5O8R4Fn5&s=10" alt="logo, "></a>
-        <a href=""><h1>Site Name...</h1></a>
+       <a href="./Index.html"><img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-AzSg3LEwc4aStPHYOYaDxKi-K9XaQ2bi4cvmhCTlJYgCNIFv5O8R4Fn5&s=10" alt="logo, "></a>
+        <a href="./Index.html"><h1>Site Name...</h1></a>
       </section>
       <section class="header-child">
         <ul class="container">
-          <li class="sitemap"><a href="#">NEWS</a></li>
-          <li class="sitemap"><a href="#">VIDEO</a></li>
-          <li class="sitemap"><a href="#">SUPPORT US</a></li>
+          <li class="sitemap"><a href="#content-holder">NEWS</a></li>
+          <li class="sitemap"><a href="multimedia.html">VIDEO</a></li>
+          <li class="sitemap"><a href="#SUPPORT">SUPPORT US</a></li>
           <li id="regional-info" class="container" style="flex-direction: column;">
-            <div id="clock">12:45AM</div>
+            <div id="clock"></div>
             <div class="container">
               <details id="languages" class="container">
-                <summary>Lang: en</summary>
-                <label><input type="radio"name="language">english</label>
-                <label><input type="radio"name="language">english</label>
-                <label><input type="radio"name="language">english</label>
-                <label><input type="radio"name="language">english</label>
+                <summary>Lang: </summary>
+                <label><input type="radio" id="en"  class="language" name="language" value="en" checked><span>en</span></label>
+                <label><input type="radio" id="fr"  class="language" name="language" value="fr"><span>fr</span></label>
+                <label><input type="radio" id="sw"  class="language" name="language" value="sw"><span>sw</span></label>
+                <label><input type="radio" id="esp" class="language"  name="language" value="esp"><span>esp</span></label>
               </details>
-              <label for="themes">light</label>
-            </div>
           </li>
         </ul>
       </section>
@@ -45,7 +42,7 @@
           <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
           <figcaption  class="headline">
             headline1...
-          </figcaption>
+       jk   </figcaption>
         </figure>
         </a>
         <a href="">
@@ -82,37 +79,214 @@
     </section>
     <div id="content-preview" class="container">
       <nav id="site-nav" class="container preview">
-        <label><input type="radio" name="site-nav" value="home">HOME</label>
-        <label><input type="radio" name="site-nav" value="TECH">TECH</label>
-        <label><input type="radio" name="site-nav" value="ENTERTAINMENT">ENTERTAINMENT</label>
-        <label><input type="radio" name="site-nav" value="FINANCE">FINANCE</label>
+        <div id="dropdown">MEE<i class='bx bxs-detail'></i></div>
+        <label class="nav"><input type="radio" name="site-nav" id="home" value="home" checked><span>HOME</span></label>
+        <label class="nav"><input type="radio" id="TECH" name="site-nav" value="TECH"><span>TECH</span></label>
+        <label class="nav"><input type="radio" id="ENTERTAINMENT" name="site-nav" value="ENTERTAINMENT"><span>ENTERTAINMENT</span></label>
+        <label class="nav"><input type="radio" id="FINANCE" name="site-nav" value="FINANCE"><span>FINANCE</span></label>
       </nav>
       <form action="#" id="search" class="container preview">
         <input type="search" name="site-search" id="search-box">
-        <button type="submit" id="submit">
+        <button type="submit" id="submit" class="container">
           <i class='bx bx-search-alt'></i>
         </button>        
       </form>
     </div>
     <main id="content-holder">
-      <section id="home">
-       <section class="content" id="featured-news">1234567890</section>
-      <section class="content" id="breaking-news">1234567890</section>
-      <section class="content" id="latest-news">1234567890</section>
-      <section class="content" id="multimedia">1234567890</section>
-      <section class="content" id="advertisement">1234567890</section>
+      <section class="main" id="HOME">
+        <section class="content" id="featured-news">
+          <h2 class="section-title">FEATURED-NEWS</h2>
+          
+        </section>
+        <section class="content" id="breaking-news">
+          <h2 class="section-title container">BREAKING NEWS</h2>
+          <figure class="container story">
+            <img src="" alt="">
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+          <figure class="container">
+            <img class="info src=" alt="">
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+          <figure class="container">
+            <img src="" class="info" alt="">
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+          <figure class="container">
+            <img src="" class="info" alt="">
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="content container" id="latest-news">
+          <div id="TRENDING">
+            <h2 class="section-title">TRENDING</h2>
+            <figure class="container">
+              <img src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <a href="latest.html">VIEW ALL</a>
+          </div>
+          <div id="HAPPENING-TODAY">
+            <h2 class="section-content">HAPPENING TODAY</h2>
+            <figure class="container">
+              <img src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img class="" src="" alt="">
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <a href="latest.html">VIEW ALL</a>
+          </div>
+        </section>
+        <section class="content" id="multimedia"><h2 class="section-title">EXPLORE OUR MULTIMEDIA</h2></section>
+        <section class="content" id="advertisement"><h2 class="section-title">ADVERTISTMENT</h2></section>
       </section>
-      <section id="TECH"></section>
-      <section id="ENTERTAINMENT"></section>
-      <section id="FINANCE"></section>
+      <section id="TECH">
+        <h2 class=" container tab-title">THE WORLD IN TECH</h2>
+        <section class="content"></section>
+        <section class="content"></section>
+        <section class="content"></section>
+        <section class="content"></section>
+        <section class="content"></section>
+      </section>
+      <section id="ENTERTAINMENT">
+        <h2 class="container tab-title">DIVE INTO THE ENTERTAINMENT INDUSTRY</h2>
+        <section class="content"></section>
+        <section class="content"></section>
+        <section class="content"></section>
+        <section class="content"></section>
+        <section class="content"></section>
+      </section>
+      <section id="FINANCE">
+        <h2 class="container tab-title">EXPLORING FINANCE</h2>
+        <section class="content"></section>
+        <section class="content"></section>
+        <section class="content"></section>
+      </section>
     </main>
-    <footer>
-      <h2>
-        About Us
-      </h2>
-      <p>
-        
-      </p>
+    <footer class="container" id="page-footer">
+      <section id="write-up">
+        <figure class="container">
+          <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="" class="logo">
+          <figcaption>
+            <h2>NEWS SITE</h2>
+            <span class="container" id="social-media-handles">
+              <a href="" class="social-media">
+                <i class='bx bxl-instagram-alt'></i>
+              </a>
+              <a href="" class="social-media">
+                <i class='bx bxl-twitter'></i>
+              </a>
+              <a href="" class="social-media">
+                <i class='bx bxl-whatsapp-square'></i>
+              </a>
+              <a href="" class="social-media">
+                <i class='bx bxl-telegram'></i>
+              </a>
+            </span>
+          </figcaption>
+        </figure>
+         [News site] is a company under the [NGO], in partnership with <a href="http://" target="_blank">NUKLEIR <i class='bx bx-search-alt'></i></a>, aimed at delivering quality and up-to-date information on the latest happenings from around the world. Our platform is dedicated to providing users with accurate, comprehensive coverage across all aspects of global events.
+      </section>
+      <div class="container others">
+        <section class="others-child" id="quick-links">
+          <ul>
+            <h2>QUICK LINKS</h2>
+            <li><a href="About Us.html" target="_blank" class="links"><h3>About Us</h3></a></li>
+            <li><a href="" target="_blank" class="links"><h3>NGO</h3></a></li>
+            <li><a href="" target="_blank" class="links"><h3>Community</h3></a></li>
+            <li><a href="" class="links"><h3>Advertise</h3></a></li>  
+          </ul>
+        </section>
+        <section class="others-child" id="contributions">
+          <div>
+            <h2>NEWS LETTER</h2>
+            <form action="" id="newsletter">
+              <input type="email" name="email" id="email" required>
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+          <div>
+            <h2>SUPPORT US</h2>
+              <p>Help support the growth and expansion of our NGO.</p>
+            <form class="container" action="" id="SUPPORT">
+              <div class="container holder">
+                <label><input class="support-features" type="radio" name="card-type" id="mastercard"><span><i class='bx bxl-mastercard' ></i></span></label>
+                <label><input class="support-features" type="radio" name="card-type" id="american"><span><i class='bx bxl-mastercard' ></i></span></label>
+                <label><input class="support-features" type="radio" name="card-type" id="visa"><span><i class='bx bxl-visa'></i></span></label>
+                <label><input class="support-features" type="radio" name="card-type" id="paypal"><span><i class='bx bxl-paypal'></i></span></label>
+              </div>
+              <input class="support-features" type="text" placeholder="Card number" required>
+              <input class="support-features" type="text" placeholder="cvv" required>
+              <input class="support-features" type="text" placeholder="Card expiry date" required>
+              <input class="support-features" type="number" placeholder="Amount($)" required>
+              <button class="support-features" type="submit">DONATE</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="container" id="base">
+        <p class="copywright container">copyright &COPY; NUKLEIR &nbsp;<span id="year"></span>&nbsp; Rights Reserved</p>
+        <a href="#head" id="to-top"><i class='bx bxs-up-arrow-circle'></i></a>
+      </div>  
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
