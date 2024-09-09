@@ -1,10 +1,11 @@
 <!Doctype html>
-<htm lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/x-icon" href=""/>
     <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="Function.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>the page</title>
   </head>
@@ -22,13 +23,15 @@
           <li id="regional-info" class="container" style="flex-direction: column;">
             <div id="clock"></div>
             <div class="container">
-              <details id="languages" class="container">
-                <summary>Lang: </summary>
-                <label><input type="radio" id="en"  class="language" name="language" value="en" checked><span>en</span></label>
-                <label><input type="radio" id="fr"  class="language" name="language" value="fr"><span>fr</span></label>
-                <label><input type="radio" id="sw"  class="language" name="language" value="sw"><span>sw</span></label>
-                <label><input type="radio" id="esp" class="language"  name="language" value="esp"><span>esp</span></label>
+              <details class="container" id="languages">
+                <summary>lang: </summary>
+                  <span class="language">en</span>
+                  <span class="language">fr</span>
+                  <span class="language">sw</span>
+                  <span class="language">esp</span>
               </details>
+              <label class="container" id="mode"><input id="state" type="checkbox">dark mode</label>
+              </div>
           </li>
         </ul>
       </section>
@@ -41,8 +44,7 @@
         <figure class="img-box">
           <img src="./abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
           <figcaption  class="headline">
-            headline1...
-       jk   </figcaption>
+            headline1...</figcaption>
         </figure>
         </a>
         <a href="">
@@ -78,12 +80,15 @@
         </a>
     </section>
     <div id="content-preview" class="container">
-      <nav id="site-nav" class="container preview">
-        <div id="dropdown">MEE<i class='bx bxs-detail'></i></div>
-        <label class="nav"><input type="radio" name="site-nav" id="home" value="home" checked><span>HOME</span></label>
-        <label class="nav"><input type="radio" id="TECH" name="site-nav" value="TECH"><span>TECH</span></label>
-        <label class="nav"><input type="radio" id="ENTERTAINMENT" name="site-nav" value="ENTERTAINMENT"><span>ENTERTAINMENT</span></label>
-        <label class="nav"><input type="radio" id="FINANCE" name="site-nav" value="FINANCE"><span>FINANCE</span></label>
+      <nav class="container preview">
+        <label id="dropdown-label" for="dropdown"><i class='bx bxs-detail'></i></label>
+        <input type="checkbox" id="dropdown">
+        <div class="container" id="site-nav">
+        <span class="nav active-btn">HOME</span>
+        <span class="nav">TECH</span>
+        <span class="nav">ENTERTAINMENT</span>
+        <span class="nav">FINANCE</span>
+        </div>
       </nav>
       <form action="#" id="search" class="container preview">
         <input type="search" name="site-search" id="search-box">
@@ -93,10 +98,9 @@
       </form>
     </div>
     <main id="content-holder">
-      <section class="main" id="HOME">
+      <section class="main active-tab" id="HOME">
         <section class="content" id="featured-news">
           <h2 class="section-title">FEATURED-NEWS</h2>
-          
         </section>
         <section class="content" id="breaking-news">
           <h2 class="section-title container">BREAKING NEWS</h2>
@@ -198,7 +202,7 @@
         <section class="content" id="multimedia"><h2 class="section-title">EXPLORE OUR MULTIMEDIA</h2></section>
         <section class="content" id="advertisement"><h2 class="section-title">ADVERTISTMENT</h2></section>
       </section>
-      <section id="TECH">
+      <section class="main" id="TECH">
         <h2 class=" container tab-title">THE WORLD IN TECH</h2>
         <section class="content"></section>
         <section class="content"></section>
@@ -206,7 +210,7 @@
         <section class="content"></section>
         <section class="content"></section>
       </section>
-      <section id="ENTERTAINMENT">
+      <section class="main" id="ENTERTAINMENT">
         <h2 class="container tab-title">DIVE INTO THE ENTERTAINMENT INDUSTRY</h2>
         <section class="content"></section>
         <section class="content"></section>
@@ -214,7 +218,7 @@
         <section class="content"></section>
         <section class="content"></section>
       </section>
-      <section id="FINANCE">
+      <section class="main" id="FINANCE">
         <h2 class="container tab-title">EXPLORING FINANCE</h2>
         <section class="content"></section>
         <section class="content"></section>
@@ -258,13 +262,15 @@
         <section class="others-child" id="contributions">
           <div>
             <h2>NEWS LETTER</h2>
-            <form action="" id="newsletter">
+            <form action="" id="newsletter" class="container">
               <input type="email" name="email" id="email" required>
               <button type="submit">Sign Up</button>
             </form>
           </div>
-          <div>
-            <h2>SUPPORT US</h2>
+        </section>
+      </div>
+               <div>
+              <h2>SUPPORT US</h2>
               <p>Help support the growth and expansion of our NGO.</p>
             <form class="container" action="" id="SUPPORT">
               <div class="container holder">
@@ -280,10 +286,8 @@
               <button class="support-features" type="submit">DONATE</button>
             </form>
           </div>
-        </section>
-      </div>
       <div class="container" id="base">
-        <p class="copywright container">copyright &COPY; NUKLEIR &nbsp;<span id="year"></span>&nbsp; Rights Reserved</p>
+        <p class="copywright container">copyright &COPY; Xenonplus &nbsp;<span id="year"></span>&nbsp; Rights Reserved</p>
         <a href="#head" id="to-top"><i class='bx bxs-up-arrow-circle'></i></a>
       </div>  
     </footer>
