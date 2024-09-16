@@ -19,11 +19,7 @@ button {
     outline: 0;
     border-radius: inherit;
 }
-input[type="radio"] {
-    display: none;
-    cursor: pointer;
-}
-.container {
+.container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -39,14 +35,14 @@ input[type="radio"] {
     font-size: 1em;
 }
 .header-child,
-#write-up,
-.others {
+#write-up {
     flex: 1 1 min(500px, 100%);
     padding: 1em;
 }
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
+    border-radius: 1em;
 }
 #clock {
     font-size: x-large;
@@ -59,8 +55,7 @@ input[type="radio"] {
     position: relative;
 }
 header ul li:not(#regional-info),
-#TRENDING,
-#languages {
+#TRENDING{
     border-right: 0.1em solid hsl(60, 33%, 70%);
     min-width: 18%;
     padding: 0 0.8em;
@@ -73,7 +68,7 @@ header ul li:not(#regional-info),
     position: absolute;
     left: 0;
     color: hsl(60, 33%, 90%);
-    bottom: -40%;
+    top: 0;
     z-index: 1;
     font-size: 2em;
 }
@@ -86,20 +81,28 @@ header ul li:not(#regional-info),
     width: 100%;
     height: 28em;
     color: hsl(60, 33%, 97%);
-    overflow: auto hidden;
-    scroll-snap-type: x mandatory;
+    overflow: hidden;
 }
-#top-stories::-webkit-scrollbar {
-    height: 0;
+.arrows{
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+#carousel{
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.6s ease-in-out;
 }
 .img-box {
-    scroll-snap-align: center;
     position: relative;
-    width: inherit;
+    width: 100vw;
 }
 .img-box img {
     height: 28em;
     width: 100vw;
+    transition: opacity 0.5s ease-in-out; 
 }
 .headline {
     position: absolute;
@@ -115,11 +118,12 @@ header ul li:not(#regional-info),
     flex-wrap: nowrap;
     padding: 0.5em;
     position: sticky;
-    gap: .5em;
+    gap: 0.5em;
     top: 0;
     z-index: 1;
 }
-#site-nav, #languages {
+#site-nav,
+#languages {
     flex-direction: column;
 }
 #search,
@@ -132,6 +136,7 @@ header ul li:not(#regional-info),
 }
 #search input {
     width: 87%;
+    align-self: center;
 }
 #search button,
 .social-media,
@@ -139,14 +144,16 @@ header ul li:not(#regional-info),
     width: 12%;
     font-size: 1.8em;
 }
-.content {
+section.content {
     margin-bottom: 1em;
     background: hsl(60, 33%, 95%);
     box-shadow: 0.7em 0.7em 0.2em hsl(60, 33%, 92%);
     border-radius: 1em;
-    min-height: 40vh;
+    min-height: 30em;
     padding: 1em;
     overflow: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 #featured-news {
     grid-area: fn;
@@ -173,6 +180,7 @@ footer {
     gap: 1em;
 }
 .others,
+#dropdown-label,
 #newsletter {
     flex-wrap: nowrap;
 }
@@ -183,8 +191,7 @@ section#write-up {
 .others-child {
     width: 48%;
 }
-footer figure.container,
-#newsletter {
+footer figure.container, .others-child{
     justify-content: left;
     justify-content: flex-start;
 }
@@ -193,13 +200,12 @@ footer figure.container,
 footer input,
 footer button,
 #mode {
-  text-wrap: nowrap;
+    text-wrap: nowrap;
     font-size: x-small;
     background: none;
     border-radius: 0;
     border: 0.05em solid hsl(60, 33%, 97%);
-    margin: 0 0.3em 1.5em 0;
-    margin: auto;
+    /* margin: 0 0.3em 1.5em 0; */
 }
 #base,
 footer,
@@ -210,5 +216,4 @@ footer,
     justify-content: space-between;
     align-items: self-start;
     height: max-content;
-    line-height: normal;
 }

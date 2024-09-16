@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     currentYear.textContent = new Date().getFullYear();
     const buttons = document.querySelectorAll(".nav");
     const tabs = document.querySelectorAll(".main");
-    
     const themes = document.getElementById("state");
     window.onload = function () {
-      document.querySelectorAll(".active-btn").forEach(btn => document.getElementById("dropdown-label").textContent = btn.textContent)
+      document.querySelectorAll(".active-btn").forEach(btn => document.getElementById("dropdown-label").innerHTML += btn.textContent)
         const currentTheme = localStorage.getItem("savedTheme");
         if (currentTheme === "true") {
             themes.checked = true;
@@ -32,6 +31,44 @@ document.addEventListener("DOMContentLoaded", function () {
                 .forEach(content => content.classList.remove("drk"));
         }
     };
+    let currentImage = 0
+        const images = document.querySelectorAll(".img-box")
+        const prev = document.getElementById("prev")
+        const next = document.getElementById("next")
+        const timer = 5000
+        function showSlide(index){
+          if(index >= images.length){
+            currentImage = 0
+          }else if(index < 0){
+            currentImage = images.length -1
+          }else{
+            currentImage = index
+          }
+          const offset = -currentImage * 100
+        document.getElementById("carousel").style.transform = `translateX(${offset}%)`
+        images.forEach(image => image.classList.remove("current-img"))
+        images[currentImage].classList.add("current-img")
+        }
+
+        function nextSlide(){
+          showSlide(currentImage + 1)
+        }
+        function prevSlide(){
+          showSlide(currentImage - 1)
+        }
+        let autoSlide = setInterval(nextSlide, timer)
+        next.addEventListener("click", function(){
+          nextSlide()
+          resetAll()
+        })
+        prev.addEventListener("click", function(){
+          prevSlide()
+          resetAll()
+        })
+        function resetAll(){
+          clearInterval(autoSlide)
+          autoSlide = setInterval(nextSlide, timer)
+        }
     themes.addEventListener("input", function () {
         if (this.checked) {
             document
@@ -59,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     buttons.forEach((button, index) => {
         button.addEventListener("click", function () {
             activateTab(index);
-            document.getElementById("dropdown-label").textContent = this.textContent
+            document.getElementById("dropdown-label").innerHTML = "<i class='bx bx-chevron-down'></i>" + this.textContent
         });
     });
 });

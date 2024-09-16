@@ -1,33 +1,40 @@
-body.dark{
-  background: hsl(60, 5%, 15%);
-  color: hsl(60, 33%, 97%);
+body.dark {
+    background: hsl(60, 5%, 15%);
+    color: hsl(60, 33%, 97%);
+}
+input[type="radio"] {
+    display: none;
+    cursor: pointer;
 }
 input[type="radio"]:checked + span,
+.current-lang,
 .nav.active-btn {
     color: yellow;
     text-decoration: underline;
 }
 #site-nav,
-.main, input#dropdown[type="checkbox"] {
+.main,
+input#dropdown[type="checkbox"] {
     display: none;
 }
-#dropdown:checked ~ #site-nav{
-  display: flex;
-  justify-content: flex-start;
+#dropdown:checked ~ #site-nav, .preview {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .main.active-tab {
     display: block;
 }
-.content.drk{
-  background: hsl(60, 6%, 20%);
-  box-shadow: 0.7em 0.7em 0.2em hsl(60, 7%, 21%);
+.content.drk {
+    background: hsl(60, 6%, 20%);
+    box-shadow: 0.7em 0.7em 0.2em hsl(60, 7%, 21%);
 }
 @media screen and (min-width: 900px) {
-  .preview{
-    flex: 1 1 clamp(20%, 50vw, 50%);
-  }
+    .preview {
+        flex: 1 1 clamp(20%, 50vw, 50%);
+    }
     #site-nav {
-      display: flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
