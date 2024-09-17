@@ -1,418 +1,451 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="20240916_022310.jpg" />
-    <link rel="stylesheet" href="Styles.css" />
-    <link rel="stylesheet" href="Function.css" />
+    <link rel="icon" type="image/x-icon" href="../media/20240916_022310.jpg" />
+    <link rel="stylesheet" href="../css/Styles.css" />
+    <link rel="stylesheet" href="../css/Function.css" />
     <link
-        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-        rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
     <title>SKATECH</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="head" class="container">
-        <section class="first header-child container">
-            <a href="./Index.html"
-                ><img class="logo" src="20240916_022310.jpg"
-                    alt="logo, "
-            /></a>
-            <a href="./Index.html"><h1>SKATECH</h1></a>
-        </section>
-        <section class="header-child">
-            <ul class="container">
-                <li class="sitemap"><a href="#content-holder">NEWS</a></li>
-                <li class="sitemap"><a href="multimedia.html">VIDEO</a></li>
-                <li class="sitemap"><a href="#SUPPORT">SUPPORT US</a></li>
-                <li
-                    id="regional-info"
-                    class="container"
-                    style="flex-direction: column"
-                >
-                    <div id="clock"></div>
-                     <div class="container">
-                        <label class="container" id="mode"
-                            ><input id="state" type="checkbox" />dark
-                            mode</label
-                        >
-                    </div>
-                </li>
-            </ul>
-        </section>
+      <section class="first header-child container">
+        <a href="./Index.html"
+          ><img class="logo" src="../media/20240916_022310.jpg" alt="logo, "
+        /></a>
+        <a href="./Index.html"><h1>SKATECH</h1></a>
+      </section>
+      <section class="header-child">
+        <ul class="container">
+          <li class="sitemap"><a href="#content-holder">NEWS</a></li>
+          <li class="sitemap"><a href="multimedia.html">VIDEO</a></li>
+          <li class="sitemap"><a href="#SUPPORT">SUPPORT US</a></li>
+          <li
+            id="regional-info"
+            class="container"
+            style="flex-direction: column"
+          >
+            <div id="clock"></div>
+            <div class="container">
+              <label class="container" id="mode"
+                ><input id="state" type="checkbox" />dark mode</label
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
     </header>
     <section id="top-stories">
       <h2 id="heroes-title">TOP STORIES TODAY</h2>
       <div id="carousel">
         <a href="" class="img-box current-img">
           <figure>
-            <img src="abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg">
+            <img
+              src="../media/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"
+              alt="headline-image"
+            />
             <figcaption class="headline">headline5...</figcaption>
           </figure>
         </a>
         <a href="" class="img-box">
           <figure>
-            <img src="abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg">
+            <img
+              src="../media/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"
+              alt="headline-image"
+            />
             <figcaption class="headline">headline1...</figcaption>
           </figure>
         </a>
         <a href="" class="img-box">
           <figure>
-            <img src="abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg">
+            <img
+              src="../media/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"
+              alt="headline-image"
+            />
             <figcaption class="headline">headline2...</figcaption>
           </figure>
         </a>
         <a href="" class="img-box">
           <figure>
-            <img src="abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg">
+            <img
+              src="../media/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"
+              alt="headline-image"
+            />
             <figcaption class="headline">headline3...</figcaption>
           </figure>
         </a>
         <a href="" class="img-box">
           <figure>
-            <img src="abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg">
+            <img
+              src="../media/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"
+              alt="headline-image"
+            />
             <figcaption class="headline">headline4...</figcaption>
           </figure>
         </a>
       </div>
-       <div class="container arrows">
+      <div class="container arrows">
         <button id="prev">&#10094;</button>
         <button id="next">&#10095;</button>
       </div>
     </section>
     <div id="content-preview" class="container">
-        <nav class="container preview">
-            <label class="container" id="dropdown-label" for="dropdown"
-                ><i class="bx bx-chevron-down"></i
-            ></label>
-            <input type="checkbox" id="dropdown" />
-            <div class="container" id="site-nav">
-                <span class="nav active-btn">HOME</span>
-                <span class="nav">TECH</span>
-                <span class="nav">ENTERTAINMENT</span>
-                <span class="nav">FINANCE</span>
-            </div>
-        </nav>
-        <form action="#" id="search" class="container preview">
-            <input type="search" name="site-search" id="search-box">
-            <button type="submit" id="submit" class="container">
-                <i class="bx bx-search-alt"></i>
-            </button>
-        </form>
+      <nav class="container preview">
+        <label class="container" id="dropdown-label" for="dropdown"
+          ><i class="bx bx-chevron-down"></i
+        ></label>
+        <input type="checkbox" id="dropdown" />
+        <div class="container" id="site-nav">
+          <span class="nav active-btn">HOME</span>
+          <span class="nav">TECH</span>
+          <span class="nav">ENTERTAINMENT</span>
+          <span class="nav">FINANCE</span>
+        </div>
+      </nav>
+      <form action="#" id="search" class="container preview">
+        <input
+          type="search"
+          name="site-search"
+          id="search-box"
+          placeholder="search"
+        />
+        <button type="submit" id="submit" class="container">
+          <i class="bx bx-search-alt"></i>
+        </button>
+      </form>
     </div>
     <main id="content-holder">
-        <section class="main active-tab" id="HOME">
-            <section class="content" id="featured-news">
-                <h3 class="section-title">FEATURED-NEWS</h3>
-            </section>
-            <section class="content" id="breaking-news">
-                <h3 class="section-title container">BREAKING NEWS</h3>
-                <figure class="container story">
-                    <img src="" alt="" />
-                    <figcaption>
-                        <h3 class="info"></h3>
-                        <p class="info"></p>
-                    </figcaption>
-                </figure>
-                <figure class="container">
-                    <img class="info src=" alt="" />
-                    <figcaption>
-                        <h3 class="info"></h3>
-                        <p class="info"></p>
-                    </figcaption>
-                </figure>
-                <figure class="container">
-                    <img src="" class="info" alt="" />
-                    <figcaption>
-                        <h3 class="info"></h3>
-                        <p class="info"></p>
-                    </figcaption>
-                </figure>
-                <figure class="container">
-                    <img src="" class="info" alt="" />
-                    <figcaption>
-                        <h3 class="info"></h3>
-                        <p class="info"></p>
-                    </figcaption>
-                </figure>
-            </section>
-            <section class="content container" id="latest-news">
-                <div id="TRENDING">
-                    <h3 class="section-title">TRENDING</h3>
-                    <figure class="container">
-                        <img src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="container">
-                        <img src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="container">
-                        <img src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="container">
-                        <img src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <a href="latest.html">VIEW ALL</a>
+      <section class="main active-tab" id="HOME">
+        <section class="content" id="featured-news">
+          <h3 class="section-title">FEATURED-NEWS</h3>
+        </section>
+        <section class="content" id="breaking-news">
+          <h3 class="section-title container">BREAKING NEWS</h3>
+          <figure class="container story">
+            <img src="" alt="" />
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+          <figure class="container">
+            <img class="info src=" alt="" />
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+          <figure class="container">
+            <img src="" class="info" alt="" />
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+          <figure class="container">
+            <img src="" class="info" alt="" />
+            <figcaption>
+              <h3 class="info"></h3>
+              <p class="info"></p>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="content container" id="latest-news">
+          <div id="TRENDING">
+            <h3 class="section-title">TRENDING</h3>
+            <figure class="container">
+              <img src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <a href="latest.html">VIEW ALL</a>
+          </div>
+          <div id="HAPPENING-TODAY">
+            <h3 class="section-content">HAPPENING TODAY</h3>
+            <figure class="container">
+              <img src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <figure class="container">
+              <img class="" src="" alt="" />
+              <figcaption>
+                <h3 class="info"></h3>
+                <p class="info"></p>
+              </figcaption>
+            </figure>
+            <a href="latest.html">VIEW ALL</a>
+          </div>
+        </section>
+        <section class="content" id="multimedia">
+          <h3 class="section-title">EXPLORE OUR MULTIMEDIA</h3>
+          <div class="container" id="mm-container">
+            <video id="mm-video" src="" autoplay></video>
+            <div class="container" id="images">
+              <div class="container">
+                <div class="container img-sections">
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
                 </div>
-                <div id="HAPPENING-TODAY">
-                    <h3 class="section-content">HAPPENING TODAY</h3>
-                    <figure class="container">
-                        <img src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="container">
-                        <img src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="container">
-                        <img src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="container">
-                        <img class="" src="" alt="" />
-                        <figcaption>
-                            <h3 class="info"></h3>
-                            <p class="info"></p>
-                        </figcaption>
-                    </figure>
-                    <a href="latest.html">VIEW ALL</a>
+                <div class="container img-sections">
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
                 </div>
-            </section>
-            <section class="content" id="multimedia">
-                <h3 class="section-title">EXPLORE OUR MULTIMEDIA</h3>
-            </section>
-            <section class="content" id="advertisement">
-                <h3 class="section-title">ADVERTISTMENT</h3>
-            </section>
+              </div>
+              <div class="container">
+                <div class="container img-sections">
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                </div>
+                <div class="container img-sections">
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                  <img src="" alt="" class="mm-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="./multimedia.html">VIEW ALL</a>
         </section>
-        <section class="main" id="TECH">
-            <h2 class="container tab-title">THE TECH SPHERE</h2>
-            <section class="content">
-              <h3>
-                TECH FOR GOOD
-              </h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">EMERGING TECH</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">HARDWARE & SOFTWARE</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-content">
-                NETWORKING & SECURITY
-              </h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">TECH CAREER & CULTURE</h3>
-            </section>
+        <section class="content" id="advertisement">
+          <h3 class="section-title">ADVERTISTMENT</h3>
         </section>
-        <section class="main" id="ENTERTAINMENT">
-            <h2 class="container tab-title">
-              ENTERTAINMENT EDGE
-            </h2>
-            <section class="content">
-              <h3 class="section-title">FASHION & LIFESTYLE</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">SHOWBIZ & FILMDOM</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">CELEBRITIES & GOSSIP</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">AWARDS & EVENTS</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">TRAILERS & SKITS</h3>
-            </section>
+      </section>
+      <section class="main" id="TECH">
+        <h2 class="container tab-title">THE TECH SPHERE</h2>
+        <section class="content">
+          <h3>TECH FOR GOOD</h3>
         </section>
-        <section class="main" id="FINANCE">
-            <h2 class="container tab-title">THE FINANCE FORUM</h2>
-            <section class="content">
-              <h3 class="section-title">MARKET NEWS</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">INDUSTRY & ECONOMY</h3>
-            </section>
-            <section class="content">
-              <h3 class="section-title">CRYPTOCURRENCY</h3>
-            </section>
+        <section class="content">
+          <h3 class="section-title">EMERGING TECH</h3>
         </section>
+        <section class="content">
+          <h3 class="section-title">HARDWARE & SOFTWARE</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-content">NETWORKING & SECURITY</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-title">TECH CAREER & CULTURE</h3>
+        </section>
+      </section>
+      <section class="main" id="ENTERTAINMENT">
+        <h2 class="container tab-title">ENTERTAINMENT EDGE</h2>
+        <section class="content">
+          <h3 class="section-title">FASHION & LIFESTYLE</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-title">SHOWBIZ & FILMDOM</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-title">CELEBRITIES & GOSSIP</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-title">AWARDS & EVENTS</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-title">TRAILERS & SKITS</h3>
+        </section>
+      </section>
+      <section class="main" id="FINANCE">
+        <h2 class="container tab-title">THE FINANCE FORUM</h2>
+        <section class="content">
+          <h3 class="section-title">MARKET NEWS</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-title">INDUSTRY & ECONOMY</h3>
+        </section>
+        <section class="content">
+          <h3 class="section-title">CRYPTOCURRENCY</h3>
+        </section>
+      </section>
     </main>
     <footer class="container" id="page-footer">
-        <section id="write-up">
-            <figure class="container">
-                <img
-                  src="20240916_022310.jpg"
-                    alt="SKATECH"
-                    class="logo"
-                />
-                <figcaption>
-                    <h2>SKATECH</h2>
-                    <span class="container" id="social-media-handles">
-                        <a href="" class="social-media">
-                            <i class="bx bxl-instagram-alt"></i>
-                        </a>
-                        <a href="" class="social-media">
-                            <i class="bx bxl-twitter"></i>
-                        </a>
-                        <a href="" class="social-media">
-                            <i class="bx bxl-whatsapp-square"></i>
-                        </a>
-                        <a href="" class="social-media">
-                            <i class="bx bxl-telegram"></i>
-                        </a>
-                    </span>
-                </figcaption>
-            </figure>
-            SKATECH is a company under the [NGO], in partnership with
-            <a href="http://" target="_blank"
-                >Xenonpulse<i class="bx bx-search-alt"></i></a
-            >, aimed at delivering quality and up-to-date information on the
-            latest happenings from around the world. Our platform is
-            dedicated to providing users with accurate, comprehensive
-            coverage across all aspects of global events.
+      <section id="write-up">
+        <figure class="container">
+          <img src="../media/20240916_022310.jpg" alt="SKATECH" class="logo" />
+          <figcaption>
+            <h2>SKATECH</h2>
+            <span class="container" id="social-media-handles">
+              <a href="" class="social-media">
+                <i class="bx bxl-instagram-alt"></i>
+              </a>
+              <a href="" class="social-media">
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a href="" class="social-media">
+                <i class="bx bxl-whatsapp-square"></i>
+              </a>
+              <a href="" class="social-media">
+                <i class="bx bxl-telegram"></i>
+              </a>
+            </span>
+          </figcaption>
+        </figure>
+        SKATECH is a company under the [NGO], in partnership with
+        <a href="http://" target="_blank"
+          >Xenonpulse<i class="bx bx-search-alt"></i></a
+        >, aimed at delivering quality and up-to-date information on the latest
+        happenings from around the world. Our platform is dedicated to providing
+        users with accurate, comprehensive coverage across all aspects of global
+        events.
+      </section>
+      <div class="container others">
+        <section class="others-child" id="quick-links">
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li>
+              <a href="About Us.html" class="links"><h3>About SKATECH</h3></a>
+            </li>
+            <li>
+              <a href="" target="_blank" class="links"><h3>NGO</h3></a>
+            </li>
+            <li>
+              <a href="R nd f.html" target="_blank" class="links"
+                ><h3>Report&Feedback</h3></a
+              >
+            </li>
+            <li>
+              <a href="Advertise.html" target="_blank" class="links"
+                ><h3>Advertise</h3></a
+              >
+            </li>
+          </ul>
         </section>
-        <div class="container others">
-            <section class="others-child" id="quick-links">
-                <ul>
-                    <h2>QUICK LINKS</h2>
-                    <li>
-                        <a
-                            href="About Us.html"
-                            target="_blank"
-                            class="links"
-                            ><h3>About SKATECH</h3></a
-                        >
-                    </li>
-                    <li>
-                        <a href="" target="_blank" class="links"
-                            ><h3>NGO</h3></a
-                        >
-                    </li>
-                    <li>
-                        <a href="R nd f.html" target="_blank" class="links"
-                            ><h3>Report&Feedback</h3></a
-                        >
-                    </li>
-                    <li>
-                        <a href="Advertise.html" target="_blank" class="links"><h3>Advertise</h3></a>
-                    </li>
-                </ul>
-            </section>
-            <section class="others-child" id="contributions">
-                <div>
-                    <h2>NEWS LETTER</h2>
-                    <form action="" id="newsletter" class="container">
-                      <input type="email"id="email" required>
-                        <button id="submit" type="submit">Sign Up</button>
-                  </form>
-                </div>
-            </section>
-        </div>
-        <div>
-            <h2>SUPPORT US</h2>
-            <p>Help support the growth and expansion of our NGO.</p>
-            <form class="container" action="" id="SUPPORT">
-                <div class="container holder">
-                    <label
-                        ><input
-                            class="support-features"
-                            type="radio"
-                            name="card-type"
-                            id="mastercard" /><span
-                            ><i class="bx bxl-mastercard"></i></span
-                    ></label>
-                    <label
-                        ><input
-                            class="support-features"
-                            type="radio"
-                            name="card-type"
-                            id="american" /><span
-                            ><i class="bx bxl-mastercard"></i></span
-                    ></label>
-                    <label
-                        ><input
-                            class="support-features"
-                            type="radio"
-                            name="card-type"
-                            id="visa" /><span
-                            ><i class="bx bxl-visa"></i></span
-                    ></label>
-                    <label
-                        ><input
-                            class="support-features"
-                            type="radio"
-                            name="card-type"
-                            id="paypal" /><span
-                            ><i class="bx bxl-paypal"></i></span
-                    ></label>
-                </div>
-                <input
-                    class="support-features"
-                    type="text"
-                    placeholder="Card number"
-                    required
-                />
-                <input
-                    class="support-features"
-                    type="text"
-                    placeholder="cvv"
-                    required
-                />
-                <input
-                    class="support-features"
-                    type="text"
-                    placeholder="Card expiry date"
-                    required
-                />
-                <input
-                    class="support-features"
-                    type="number"
-                    placeholder="Amount($)"
-                    required
-                />
-                <button class="support-features" type="submit">
-                    DONATE
-                </button>
+        <section class="others-child" id="contributions">
+          <div>
+            <h2>NEWS LETTER</h2>
+            <form action="" id="newsletter" class="container">
+              <input type="email" id="email" required />
+              <button id="submit" type="submit">Sign Up</button>
             </form>
-        </div>
-        <div class="container" id="base">
-            <p class="copywright container">
-                copyright &COPY; Xenonpulse&nbsp;<span id="year"></span
-                >&nbsp; All Rights Reserved
-            </p>
-            <a href="#head" id="to-top"
-                ><i class="bx bxs-up-arrow-circle"></i
-            ></a>
-        </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <h2>SUPPORT US</h2>
+        <p>Help support the growth and expansion of our NGO.</p>
+        <form class="container" action="" id="SUPPORT">
+          <div class="container holder">
+            <label
+              ><input
+                class="support-features"
+                type="radio"
+                name="card-type"
+                id="mastercard" /><span><i class="bx bxl-mastercard"></i></span
+            ></label>
+            <label
+              ><input
+                class="support-features"
+                type="radio"
+                name="card-type"
+                id="american" /><span><i class="bx bxl-mastercard"></i></span
+            ></label>
+            <label
+              ><input
+                class="support-features"
+                type="radio"
+                name="card-type"
+                id="visa" /><span><i class="bx bxl-visa"></i></span
+            ></label>
+            <label
+              ><input
+                class="support-features"
+                type="radio"
+                name="card-type"
+                id="paypal" /><span><i class="bx bxl-paypal"></i></span
+            ></label>
+          </div>
+          <input
+            class="support-features"
+            type="text"
+            placeholder="Card number"
+            required
+          />
+          <input
+            class="support-features"
+            type="text"
+            placeholder="cvv"
+            required
+          />
+          <input
+            class="support-features"
+            type="text"
+            placeholder="Card expiry date"
+            required
+          />
+          <input
+            class="support-features"
+            type="number"
+            placeholder="Amount($)"
+            required
+          />
+          <button class="support-features" type="submit">DONATE</button>
+        </form>
+      </div>
+      <div class="container" id="base">
+        <p class="copywright container">
+          copyright &COPY; Xenonpulse&nbsp;<span id="year"></span>&nbsp; All
+          Rights Reserved
+        </p>
+        <a href="#head" id="to-top"><i class="bx bxs-up-arrow-circle"></i></a>
+      </div>
     </footer>
   </body>
 </html>
