@@ -7,6 +7,14 @@
     color: CurrentColor;
     scroll-behavior: smooth;
 }
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-101%);
+    }
+}
 body {
     background: hsl(0, 0%, 94%);
 }
@@ -92,7 +100,6 @@ header ul li:not(#regional-info),
 }
 #carousel{
   display: flex;
-  flex-wrap: nowrap;
   transition: transform 0.6s ease-in-out;
 }
 .img-box {
@@ -108,7 +115,7 @@ header ul li:not(#regional-info),
     position: absolute;
     font-size: 1.5em;
     bottom: 5%;
-    left: 1%;
+    left: 3%;
 }
 #content-holder {
     padding: 1em;
@@ -125,6 +132,7 @@ header ul li:not(#regional-info),
 #site-nav,
 #languages {
     flex-direction: column;
+    cursor: pointer;
 }
 #search,
 #email {
@@ -166,6 +174,49 @@ section.content {
 }
 #multimedia {
     grid-area: mm;
+}
+#mm-container{
+    margin: 1em 0;
+    gap: 1em;
+    height: 80%;
+}
+#mm-video{
+    height: 100%;
+    width: 25%;
+    border-radius: 3em;
+    background: hsl(60, 33%, 70%);
+}
+#images{
+    width: 70%;
+    height: 100%;
+    border-radius: 3em;
+    border: 3px solid red;
+    overflow: hidden;
+    
+}
+#images>div{
+    height: 45%;
+    overflow: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: .4em;
+}
+.img-sections{
+    gap: .4em;
+    border-radius: inherit;
+    width: max-content;
+    height: 100%;
+    flex-wrap: nowrap;
+    animation: scroll 30s both ease-in-out infinite;
+}
+#images div::-webkit-scrollbar{
+    height: 0;
+}
+.mm-image{
+    content: url("../media/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg");
+    height: 100%;
+    width: 25em;
+    border-radius: 3em;
 }
 #advertisement {
     grid-area: ad;
@@ -210,7 +261,7 @@ footer button,
 #base,
 footer,
 .others,
-#social-media-handles {
+#social-media-handles{
     gap: 0.5em;
     font-size: large;
     justify-content: space-between;
