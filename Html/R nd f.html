@@ -1,0 +1,116 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../media/20240916_022310 copy.jpg" />
+  <link rel="stylesheet" href="../css/Styles.css">
+  <link rel="stylesheet" href="../css/Function.css">
+  <style>
+    input[type="radio"]{
+      display: inline;
+    }
+    fieldset, li{
+      padding: 0 1em;
+      margin-bottom: .5em;
+    }
+    button{
+      width: 100%;
+      text-align: center;
+      background: hsl(210, 100%, 12%);
+      color: wheat;
+    }
+  </style>
+  <title>SKATECH[report and feedback]</title>
+</head>
+<body id="content-holder">
+  <header>
+    <h1 class="container">MAKE A REPORT, FEEDBACK OR SUGGESTIONS</h1>
+  </header>
+  <P>
+  <h2>Instructions:</h2>
+  Please note that we value every report&feedback sent by our users and for us to provide the best user experience we
+  will require that you provide clear and precise information on whatever report you want to give.<br>
+  <h3>Here is how to do so:</h3>
+  <ol>
+    <li>
+      <strong>Select the Type of Report/Feedback:</strong>
+      Use the drop-down menu to choose the category that best fits your submission (e.g., general feedback, issue
+      report, suggestion, etc.).
+    </li>
+    <li>
+      <strong>Provide Details:</strong>
+      In the description box, explain your issue or feedback in as much detail as possible. Be sure to include relevant
+      information such as:
+
+      Date and time the issue occurred (if applicable)
+      Location or section of the website/service where the issue was found (if applicable)
+      Any relevant context or background to help us understand the situation
+    </li>
+    <li>
+      <strong>Attachments (Optional):</strong>
+      If you have any supporting files (e.g., screenshots, photos, or documents), please attach them in the provided
+      section.
+    </li>
+    <li>
+      <strong>Set the Priority:</strong>
+      If relevant, indicate the urgency of your report. For example, if it’s a critical issue affecting usability or
+      service, select "High Priority."
+    </li>
+    <li>
+      <strong>Contact Information (Optional):</strong>
+      If you would like us to follow up with you, please provide your email address or contact details. Otherwise, your
+      submission can remain anonymous.
+    </li>
+    <li>
+      <strong>Submit:</strong>
+      Once you’ve completed all sections, click "Submit." You will receive a confirmation message once your report has
+      been successfully sent.
+    </li>
+  </ol>
+  </P>
+  <form action="">
+    <fieldset>
+      <legend>
+        <h2>Contact information(optional)</h2>
+      </legend>
+      <input type="email" name="email" placeholder="input your email" id="">
+    </fieldset>
+    <fieldset>
+      <legend>
+        <h2>Feedback/Report</h2>
+      </legend>
+      <h3>Feedback type*</h3>
+      <div>
+        <label><input required type="radio" name="feedback-type">inapropriate content</label>
+        <label><input type="radio" name="feedback-type">incorrect story</label>
+        <label><input type="radio" name="feedback-type">technical problems</label>
+        <label><input type="radio" name="feedback-type">general feedback</label>
+        <label><input type="radio" name="feedback-type">suggestions</label>
+      </div>
+      <label for="details">
+        <h3>Description/Details*</h3>
+      </label>
+      <textarea name="description/details" cols="50" rows="20" required  id="details" placeholder="your text here"></textarea>
+      <label for="Attachments">
+        <h3>Attachments</h3>
+        <p>attach photos, screenshots or documents to support your feedback</p>
+      </label>
+      <input type="file" name="file" id="Attachments">
+      <h3>Priority/urgency level</h3>
+      <div>
+        <label><input type="radio" name="urgency">very urgent</label>
+        <label><input type="radio" name="urgency">important but can wait</label>
+        <label><input type="radio" name="urgency">not so important</label>
+        <label><input type="radio" name="urgency">just wanted to let you know</label>
+      </div>
+      <p>
+        <strong>NB: * indicates that field is required</strong>
+      </p>
+    </fieldset>
+    <button type="submit" class="container">SUBMIT</button>
+  </form>
+</body>
+
+</html>
