@@ -1,4 +1,4 @@
-body.dark {
+.body.dark {
     background: hsl(60, 5%, 15%);
     color: hsl(60, 33%, 97%);
 }
@@ -38,6 +38,9 @@ input#dropdown[type="checkbox"] {
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
+    }
+    #content-preview>nav{
+        flex-direction: row;
     }
     #dropdown-label,
     .main {
